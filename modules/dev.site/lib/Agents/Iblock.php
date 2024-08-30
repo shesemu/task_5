@@ -26,8 +26,8 @@ class Iblock
             $elementsToDelete = array_slice($elements, 10);
         
             
-            foreach ($elementsToDelete as $elementId) {
-                CIBlockElement::Delete($elementId);
+            foreach ($elementsToDelete as $element['ID']) {
+                CIBlockElement::Delete($element['ID']);
             }
         }
     
